@@ -182,7 +182,7 @@ export default function Dashboard() {
                             {amp01[1][1]}
                         </label>
                         <SVG
-                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/2df827ef97adc157569241aae2a49f36e4cf5b6f/src/assets/symbol/omega.svg"
+                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/5020a5051fd0396f71d2d8d6f9f4a1e4683e470d/src/assets/symbol/omega.svg"
                             width="18px"
                             height="18px"
                             title="React"
@@ -203,7 +203,7 @@ export default function Dashboard() {
                             {amp02[1][1]}
                         </label>
                         <SVG
-                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/2df827ef97adc157569241aae2a49f36e4cf5b6f/src/assets/symbol/omega.svg"
+                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/5020a5051fd0396f71d2d8d6f9f4a1e4683e470d/src/assets/symbol/omega.svg"
                             width="18px"
                             height="18px"
                             title="React"
@@ -224,10 +224,12 @@ export default function Dashboard() {
                             {amp03[1][1]}
                         </label>
                         <SVG
-                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/2df827ef97adc157569241aae2a49f36e4cf5b6f/src/assets/symbol/omega.svg"
-                            width="18px"
-                            height="18px"
+                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/5020a5051fd0396f71d2d8d6f9f4a1e4683e470d/src/assets/symbol/omega.svg"
+                            width="16px"
+                            height="17px"
                             title="React"
+                            color="#42ac00"
+                            style={{ color: "#42ac00"}}
                             className={classes.p}
                         />
                     </div>
