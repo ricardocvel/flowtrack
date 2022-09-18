@@ -1,27 +1,50 @@
 import React, { useState } from 'react';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import { Chart } from "react-google-charts";
-import currentDc from '../../assets/symbol/current-dc.svg'
 import SVG from 'react-inlinesvg';
+import FlashOnIcon from '@material-ui/icons/FlashOn';
 
 const useStyles = makeStyles((theme: Theme) => ({
     root:{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         marginLeft: "0px",
         height: "100%",
         width: "100%",
     },
 
-    containerRow:{
+    containerLeft: {
+        minWidth: "50%",
+        maxWidth: "60%",
+    },
+
+    containerColun:{
         display: 'flex',
         flexDirection: 'column' ,
-        backgroundColor: 'red',
-        minWidth: "50%",
-        maxWidth: "70%"
+        borderTop: "1px solid #b9b9b9",
     },
 
     medidores:{
         display: 'flex',
         justifyContent: 'space-between',
+        marginBottom: "30px"
+    },
+
+    labelChart: {
+        display: "flex",
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+
+    p: {
+        padding: "2px",
+        marginTop: 0,
+    },
+
+    containerRigth: {
+        minWidth: "40%",
+        borderLeft: "1px solid #b9b9b9",
     }
 
 }));
@@ -55,7 +78,7 @@ export default function Dashboard() {
 
     let [amp01, setAmp01] = useState([
         ['Label', 'Value'],
-        ['A', 45],
+        ['A', 10],
     ])
 
     let [amp02, setAmp02] = useState([
@@ -71,13 +94,9 @@ export default function Dashboard() {
 
   return (
     <div  className={classes.root}>
-                          <SVG
-                        src="./src/assets/symbol/currentDc.svg"
-                        width={300}
-                        height="auto"
-                        title="React"
-                        />
-        <div className={classes.containerRow}>
+        <div className={classes.containerLeft}>
+        {/* ------------------Medidores de tensao------------------- */}
+        <div className={classes.containerColun}>
             <p>Leituras de Tensão</p>
             <div className={classes.medidores}> 
                 <div>
@@ -88,10 +107,21 @@ export default function Dashboard() {
                         data={volt01}
                         options={optionsVolts}
                     />
-                    <label>
-                        {volt01[1][1]} Volts
-                    </label>
+                    <div className={classes.labelChart}>
+                        <SVG
+                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/dff485ae29b7c0369c156c4c8da0d6d5f1fb225f/src/assets/symbol/current-dc.svg"
+                            width="25px"
+                            height="25px"
+                            title="React"
+                            className={classes.p}
+                        />
+                        <label className={classes.p}>
+                            {volt01[1][1]} Volts
+                        </label>
+                    </div>
                 </div>
+
+
                 <div>
                     <Chart
                         width={'200px'}
@@ -100,7 +130,18 @@ export default function Dashboard() {
                         data={volt02}
                         options={optionsVolts}
                     />
-                    <label>{volt02}</label>
+                    <div className={classes.labelChart}>
+                        <SVG
+                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/dff485ae29b7c0369c156c4c8da0d6d5f1fb225f/src/assets/symbol/current-dc.svg"
+                            width="25px"
+                            height="25px"
+                            title="React"
+                            className={classes.p}
+                        />
+                        <label className={classes.p}>
+                            {volt02[1][1]} Volts
+                        </label>
+                    </div>
                 </div>
                 <div>
                     <Chart
@@ -110,11 +151,22 @@ export default function Dashboard() {
                         data={volt03}
                         options={optionsVolts}
                     />
-                    <label>{volt03}</label>
+                    <div className={classes.labelChart}>
+                        <SVG
+                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/dff485ae29b7c0369c156c4c8da0d6d5f1fb225f/src/assets/symbol/current-dc.svg"
+                            width="25px"
+                            height="25px"
+                            title="React"
+                            className={classes.p}
+                        />
+                        <label className={classes.p}>
+                            {volt03[1][1]} Volts
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
-        <div className={classes.containerRow}>
+        <div className={classes.containerColun}>
             <p>Leituras de Corrente</p>
             <div className={classes.medidores}> 
                 <div>
@@ -125,9 +177,74 @@ export default function Dashboard() {
                         data={amp01}
                         options={optionsAmp}
                     />
-                    <label>{amp01}</label>
+                    <div className={classes.labelChart}>
+                        <label className={classes.p}>
+                            {amp01[1][1]}
+                        </label>
+                        <SVG
+                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/2df827ef97adc157569241aae2a49f36e4cf5b6f/src/assets/symbol/omega.svg"
+                            width="18px"
+                            height="18px"
+                            title="React"
+                            className={classes.p}
+                        />
+                    </div>
+                </div>
+                <div>
+                    <Chart
+                        width={'200px'}
+                        height={'200px'}
+                        chartType="Gauge"
+                        data={amp02}
+                        options={optionsAmp}
+                    />
+                    <div className={classes.labelChart}>
+                        <label className={classes.p}>
+                            {amp02[1][1]}
+                        </label>
+                        <SVG
+                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/2df827ef97adc157569241aae2a49f36e4cf5b6f/src/assets/symbol/omega.svg"
+                            width="18px"
+                            height="18px"
+                            title="React"
+                            className={classes.p}
+                        />
+                    </div>
+                </div>
+                <div>
+                    <Chart
+                        width={'200px'}
+                        height={'200px'}
+                        chartType="Gauge"
+                        data={amp03}
+                        options={optionsAmp}
+                    />
+                    <div className={classes.labelChart}>
+                        <label className={classes.p}>
+                            {amp03[1][1]}
+                        </label>
+                        <SVG
+                            src="https://raw.githubusercontent.com/ricardocvel/flowtrack/2df827ef97adc157569241aae2a49f36e4cf5b6f/src/assets/symbol/omega.svg"
+                            width="18px"
+                            height="18px"
+                            title="React"
+                            className={classes.p}
+                        />
+                    </div>
                 </div>
             </div>
+        </div>
+        <div className={classes.containerColun}> 
+            <label>Tensao de entrada </label>
+            <div>
+                <FlashOnIcon style={{ color: "#42ac00", height:"50px", width: "50px" }} ></FlashOnIcon> 
+                <label>Alimentação alternada ~ 110/220v Ligado</label>
+            </div>
+        </div>
+        {/* ------------------Butoons-------------------  */}
+        </div>
+        <div className={classes.containerRigth}> 
+            <h1>dsd</h1>
         </div>
     </div>
   );

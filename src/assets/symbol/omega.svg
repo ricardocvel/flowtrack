@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg5116"
+    sodipodi:docname="New document 22"
+    viewBox="0 0 200 200"
+    version="1.1"
+    inkscape:version="0.47 r22583"
+  >
+  <defs
+      id="defs5118"
+    >
+    <filter
+        id="filter5664"
+        inkscape:collect="always"
+        color-interpolation-filters="sRGB"
+      >
+      <feGaussianBlur
+          id="feGaussianBlur5666"
+          stdDeviation="1.8304688"
+          inkscape:collect="always"
+      />
+    </filter
+    >
+  </defs
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="24"
+      pagecolor="#ffffff"
+      inkscape:window-height="1134"
+      inkscape:window-maximized="0"
+      inkscape:zoom="2.0223254"
+      inkscape:window-x="0"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="90.51697"
+      inkscape:cy="90.870831"
+      inkscape:window-width="1549"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+    >
+    <inkscape:grid
+        id="grid5645"
+        enabled="true"
+        visible="true"
+        snapvisiblegridlinesonly="true"
+        type="xygrid"
+        empspacing="5"
+    />
+  </sodipodi:namedview
+  >
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      transform="translate(-30.544 -21.831)"
+    >
+    <path
+        id="path4189-4"
+        style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-dasharray:0.24681694, 0.12340847;stroke-width:.12341;fill:#000000"
+        d="m131.26 38.42c-44.983 0-81.45 32.046-81.45 71.577 0 29.997 20.996 55.687 50.779 66.332l1.0524 12.65h-40.725c-22.54-1.12-20.329-10.36-20.981-19.75h-4.9363v19.746 28.384h69.005 2.5723 4.8323l-3.2241-38.7-0.47488-5.6807-0.31316-3.7488-0.004-0.0385c-22.229-9.7032-37.84-32.554-37.84-59.198 0-35.442 27.626-64.172 61.704-64.172s61.704 28.731 61.704 64.172c0 26.643-15.611 49.494-37.84 59.198l-0.004 0.0385-0.78547 9.4295-3.2241 38.7h4.8323 2.5723 69.005v-28.384-19.746h-4.9363c-0.65071 9.3885 1.5584 18.623-20.979 19.746h-40.725l1.0524-12.65c29.783-10.645 50.779-36.335 50.779-66.332 0-39.531-36.466-71.577-81.45-71.577z"
+    />
+    <path
+        id="path5649"
+        style="stroke-linejoin:round;filter:url(#filter5664);stroke:#000000;stroke-linecap:round;stroke-dasharray:0.24681694, 0.12340847;stroke-width:.12341;fill:#fefefe"
+        d="m133.25 43.812c-16.969 0-32.314 7.1586-43.469 18.688 10.958-10.358 25.495-16.688 41.469-16.688 34.078 0 61.719 28.746 61.719 64.188 0 17.485-6.7204 33.332-17.625 44.906 12.065-11.713 19.625-28.387 19.625-46.906 0-35.442-27.641-64.188-61.719-64.188zm-62.844 18.657c-12.798 12.643-20.594 29.278-20.594 47.531 0 29.997 20.998 55.698 50.781 66.344l0.875 10.625h2.1562l-1.0312-12.625c-29.779-10.64-50.778-36.34-50.778-66.34 0-17.295 6.9745-33.159 18.594-45.531zm122.69 94.094c-8.0534 7.657-17.988 13.789-29.156 17.781l-0.0937 1.2812c11.33-4.3514 21.307-10.925 29.25-19.062zm-36.062 11.75c-0.63181 0.30251-1.2632 0.59427-1.9062 0.875v0.0312l-0.78125 9.4375-3.25 38.719h4.8438 2.5625 69.031v-2h-67.031-2.5625-4.8438l3.25-38.719 0.6875-8.3438zm-122.04 0.91v19.75 28.406h69 2.5625 4.8438l-0.15625-2h-2.6875-2.5625-69v-28.406-17.75h-2zm187.59 0c-0.34292 4.9477 0.0761 9.8651-2.7188 13.562 4.4387-3.3713 4.4115-8.3656 4.625-13.562h-1.9062z"
+    />
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Omega, Ohm</dc:title
+        >
+        <dc:date
+          >2011-02-11T00:14:51</dc:date
+        >
+        <dc:description
+          >Omega or Ohm symbol</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/117715/omega-ohm-by-bnielsen</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >bnielsen</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >Ohm</rdf:li
+            >
+            <rdf:li
+              >Omega</rdf:li
+            >
+            <rdf:li
+              >Symbol</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
