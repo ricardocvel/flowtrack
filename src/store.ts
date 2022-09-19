@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import messagesReducer from 'reducers/messagesReducer';
+import messagesReducer from './reducers/messagesReducer';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
 
 const store = configureStore({

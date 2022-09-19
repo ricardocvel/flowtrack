@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { withStyles, makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { Chart } from "react-google-charts";
 import { Button, Checkbox, FormControlLabel  } from '@material-ui/core';
@@ -153,10 +153,20 @@ export default function Dashboard() {
 
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setState({ ...state, [event.target.name]: event.target.checked });
-        setAtivaCheckButton(state.ativaButton)
-        console.log(ativaCheckButton)
+        if(event.target.name == 'ativaButton'){
+            setState({ ...state, 'ativaButton': state.ativaButton? false: true});
+            setAtivaCheckButton(state.ativaButton)
+        }
+        if(event.target.name == 'ativaGravacao'){
+            setState({ ...state, 'ativaGravacao': state.ativaGravacao? false: true});
+        }
     };
+
+    // useEffect(() => {
+    //     if(ativaCheckButton){
+
+    //     }
+    //   },[ativaCheckButton]); 
 
     var optionsVolts = {
         redFrom: 90, redTo: 100,
@@ -374,16 +384,13 @@ export default function Dashboard() {
             <div className={classes.containerRigth}> 
                 <div className={classes.contaiButtons}>
                     <div className={classes.m}>
-                        {/* <FormControlLabel
-                            control={<IOSSwitch checked={state.checkedB} onChange={handleChange} name="checkedB" />}
-                            label="iOS style"
-                        /> */}
                     </div>
                     <div className={classes.m}>
                         <Button variant="contained">
                             Rele 01
                             <Checkbox 
                                 value="rele01"
+                                disabled={ativaCheckButton}
                                 inputProps={{ title: 'Manter Botão ligado apos pressionar' }}
                                 //  {{releStatus[1][0] ? (disabled):()}}
                             />
@@ -395,6 +402,7 @@ export default function Dashboard() {
                             Rele 02
                             <Checkbox 
                                 value="rele02"
+                                disabled={ativaCheckButton}
                                 inputProps={{ title: 'Manter Botão ligado apos pressionar' }}
                             />
                             </Button>
@@ -405,6 +413,7 @@ export default function Dashboard() {
                             Rele 03
                             <Checkbox 
                                 value="rele03"
+                                disabled={ativaCheckButton}
                                 inputProps={{ title: 'Manter Botão ligado apos pressionar' }}
                             />
                             </Button>
@@ -415,6 +424,7 @@ export default function Dashboard() {
                             Rele 04
                             <Checkbox 
                                 value="rele04"
+                                disabled={ativaCheckButton}
                                 inputProps={{ title: 'Manter Botão ligado apos pressionar' }}
                             />
                         </Button>

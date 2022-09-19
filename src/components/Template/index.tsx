@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Routing from 'routes'
+import Routing from '../../routes'
 
 const TestNav: React.FC = () =>
   <div>/test page</div>;
