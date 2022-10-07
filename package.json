@@ -1,5 +1,5 @@
 {
-  "name": "alscut",
+  "name": "telemetriaWebClient",
   "version": "0.0.0",
   "node": "16.9.1",
   "private": true,

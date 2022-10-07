@@ -46,7 +46,7 @@ const Header: React.FunctionComponent<Props> = ({ color, children }) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Gate Telemetria
+            GET Telemetria
           </Typography>
           <Button color="inherit">Tcc</Button>
         </Toolbar>

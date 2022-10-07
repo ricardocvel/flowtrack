@@ -7,6 +7,8 @@ import SVG from 'react-inlinesvg';
 import { OfflineBolt, HighlightOff,CheckCircleOutline ,
     CloudOff, FlashOff
 } from '@material-ui/icons';
+import {getData} from '../data/getDados'
+
 
 interface Styles extends Partial<Record<SwitchClassKey, string>> {
     focusVisible?: string;
@@ -29,88 +31,23 @@ const PurpleSwitch = withStyles({
     track: {},
   })(Switch);
 
-const useStyles = makeStyles((theme: Theme) => ({
-    root:{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginLeft: "0px",
-        height: "100%",
-        width: "100%",
-    },
+export default function Dashboard() {
 
-    containerLeft: {
-        minWidth: "50%",
-        maxWidth: "60%",
-    },
+    function getDados(){
+        var data = getData();
+        console.log("busca dados");
+        console.log(data);
+    
+        // setAcStatus([])
 
-    containerColun:{
-        display: 'flex',
-        flexDirection: 'column' ,
-        borderTop: "1px solid #b9b9b9",
-    },
-
-    containerColunRigth: {
-        display: 'flex',
-        flexDirection: 'column' ,
-        borderTop: "1px solid #b9b9b9",
-        margin: "30px 0 10px 30px",
-    },
-
-    containerStatus: {
-        display: 'flex',
-        flexDirection: 'row' ,
-    },
-
-    labelAc: {
-        display: 'flex',
-        alignItems: "center",
-        justifyContent: "center"
-    },
-
-    medidores:{
-        display: 'flex',
-        justifyContent: 'space-between',
-        marginBottom: "30px"
-    },
-
-    labelChart: {
-        display: "flex",
-        justifyContent: 'center',
-        alignItems: 'center',
-        border: "1px solid #b9b9b9"
-    },
-
-    p: {
-        padding: "10px",
-        marginTop: 0,
-    },
-
-    containerRigth: {
-        minWidth: "40%",
-        borderLeft: "1px solid #b9b9b9",
-    },
-
-    m: {
-        // padding: "10px",
-        display: "flex",
-        margin: "30px 0 10px 30px",
-        alignContent: "flex-start"
-    },
-
-    contaiButtons: {
-        alignContent: "start",
-    },
-
-    title: {
-        fontWeight: "bold",
-        fontSize: "20px"
     }
 
-}));
-
-
-export default function Dashboard() {
+    useEffect(() => {
+        let intervalId = setInterval(getDados,5000)
+        return(() => {
+            clearInterval(intervalId)
+        })
+    },[])
 
     //style
     const classes = useStyles();
@@ -522,6 +459,88 @@ export default function Dashboard() {
     </div>
   );
 }
+
+
+const useStyles = makeStyles((theme: Theme) => ({
+    root:{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginLeft: "0px",
+        height: "100%",
+        width: "100%",
+    },
+
+    containerLeft: {
+        minWidth: "50%",
+        maxWidth: "60%",
+    },
+
+    containerColun:{
+        display: 'flex',
+        flexDirection: 'column' ,
+        borderTop: "1px solid #b9b9b9",
+    },
+
+    containerColunRigth: {
+        display: 'flex',
+        flexDirection: 'column' ,
+        borderTop: "1px solid #b9b9b9",
+        margin: "30px 0 10px 30px",
+    },
+
+    containerStatus: {
+        display: 'flex',
+        flexDirection: 'row' ,
+    },
+
+    labelAc: {
+        display: 'flex',
+        alignItems: "center",
+        justifyContent: "center"
+    },
+
+    medidores:{
+        display: 'flex',
+        justifyContent: 'space-between',
+        marginBottom: "30px"
+    },
+
+    labelChart: {
+        display: "flex",
+        justifyContent: 'center',
+        alignItems: 'center',
+        border: "1px solid #b9b9b9"
+    },
+
+    p: {
+        padding: "10px",
+        marginTop: 0,
+    },
+
+    containerRigth: {
+        minWidth: "40%",
+        borderLeft: "1px solid #b9b9b9",
+    },
+
+    m: {
+        // padding: "10px",
+        display: "flex",
+        margin: "30px 0 10px 30px",
+        alignContent: "flex-start"
+    },
+
+    contaiButtons: {
+        alignContent: "start",
+    },
+
+    title: {
+        fontWeight: "bold",
+        fontSize: "20px"
+    }
+
+}));
+
 
 
 //style 
