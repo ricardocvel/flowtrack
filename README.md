@@ -5,7 +5,7 @@ Projeto extremamente basico, visando apenas mostrar as visualizações de dados 
 
 <a href="https://github.com/ricardocvel" title="Clique e acesse agora!">hardware</a>
 
-<a href="https://github.com/ricardocvel" title="Clique e acesse agora!">Firmware</a>
+<a href="https://github.com/ricardocvel/FirmwareTccTelemetria" title="Clique e acesse agora!">Firmware</a>
 
 <a href="https://github.com/ricardocvel" title="Clique e acesse agora!">Tcc</a>
 
