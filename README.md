@@ -21,7 +21,7 @@ Planejado para ter uma tela de visualização de historico de dados e a visualiz
 
 ### **Telemetria**
 
-Essa tela simula msotradores analogicos, são totalmente configuraveis, utilizado do google charts, alem de visualização de status de tensao na parte superior
+Essa tela simula msotradores analogicos ( projeto generico) , são totalmente configuraveis, utilizado do google charts, alem de visualização de status de tensao na parte superior
 
 ![mostradores](https://github.com/ricardocvel/flowtrack/blob/master/src/assets/outers/mostradores.JPG?raw=true)
 
